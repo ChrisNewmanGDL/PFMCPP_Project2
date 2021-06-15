@@ -15,11 +15,11 @@ video: Chapter 2 - Part 3
  
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
- 
- 
- 
- 
- 
+ int
+ char
+ bool
+ float
+ double
  
  
  
@@ -60,10 +60,25 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+int count = 0;
+int age = 21;
+int rankOrder = 6;
+char letter = 'a';
+char position = 'B';
+char axis = 'y';
+bool OnOff = false; 
+bool answer = true;
+bool upDown = true;
+float height = 1.80f;
+float weight = 6.54f;
+float width = 4.356f;
+double kmDriven = 8.3333;
+double hardSumsResult = 34.502935409324809834;
+double minisculeThingSize = 0.0000000000234;
+  
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, count, age, rankOrder, letter, position, axis, OnOff, answer, upDown, height, weight, width, kmDriven, hardSumsResult, minisculeThingSize); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -80,43 +95,79 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+float rectangleArea (float width, float height)
+{
+    ignoreUnused(width, height);
+    return{};
+}
 /*
  2)
  */
-
+int segmentLength (int segmentStart, int segmentEnd)
+{
+    ignoreUnused(segmentStart, segmentEnd);
+    return{};
+}
 /*
  3)
  */
-
+void grandaughterTantrumLikelihood (float timeSinceLastMeal, bool minorSetback)
+{
+    ignoreUnused(timeSinceLastMeal, minorSetback);
+}
 /*
  4)
  */
-
+bool triggerActivated(int thresholdLevel)
+{
+    ignoreUnused(thresholdLevel);
+    return{};
+}
 /*
  5)
  */
-
+bool matchCanStart(int playersPresent, bool refereePresent=1)
+{
+    ignoreUnused(playersPresent, refereePresent);
+    return{};
+}
 /*
  6)
  */
-
+bool validSubmission(int wordCount, float lineSpacing, bool headerCorrect)
+{
+ignoreUnused(wordCount, lineSpacing, headerCorrect);
+return{};
+}
 /*
  7)
  */
-
+void enterPlayground(float childHeight)
+{
+    ignoreUnused(childHeight);
+}
 /*
  8)
  */
-
+float journeyTime(int averageSpeed, int distanceInMiles)
+{
+    ignoreUnused(averageSpeed, distanceInMiles);
+    return{};
+}
 /*
  9)
  */
-
+void addChordTones(float inputNoteFrequency, float third = 0.333, float fifth = 0.583)
+{
+    ignoreUnused(inputNoteFrequency, third, fifth);
+}
 /*
  10)
  */
-
+void meetingQuorate(int membersPresent, int committeeSize)
+{
+    ignoreUnused(membersPresent, committeeSize);
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -137,27 +188,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto pitchArea = rectangleArea(30, 121.5);
     //2)
-    
+    auto phraseLength =segmentLength(22, 45);
     //3)
-    
+    grandaughterTantrumLikelihood (3, 1);
     //4)
-    
+    bool playNote = triggerActivated(7);
     //5)
-    
+    bool blowWhistle = matchCanStart(11);
     //6)
-    
+    bool markThis = validSubmission(2000,1.5, 1);
     //7)
-    
+    enterPlayground(1.1);
     //8)
-    
+    float podcastLength = journeyTime(60, 225);
     //9)
-    
+    addChordTones(1.167);
     //10)
+    meetingQuorate(7,13);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented,pitchArea,phraseLength,grandaughterTantrumLikelihood, playNote, blowWhistle, markThis, enterPlayground, podcastLength, addChordTones, meetingQuorate);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

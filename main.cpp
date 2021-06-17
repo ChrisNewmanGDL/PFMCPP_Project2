@@ -95,7 +95,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-float rectangleArea (float width, float height)
+float rectangleArea(float width, float height)
 {
     ignoreUnused(width, height);
     return{};
@@ -103,7 +103,7 @@ float rectangleArea (float width, float height)
 /*
  2)
  */
-int segmentLength (int segmentStart, int segmentEnd)
+int segmentLength(int segmentStart, int segmentEnd)
 {
     ignoreUnused(segmentStart, segmentEnd);
     return{};
@@ -111,7 +111,7 @@ int segmentLength (int segmentStart, int segmentEnd)
 /*
  3)
  */
-void grandaughterTantrumLikelihood (float timeSinceLastMeal, bool minorSetback)
+void grandaughterTantrumLikelihood(float timeSinceLastMeal, bool minorSetback)
 {
     ignoreUnused(timeSinceLastMeal, minorSetback);
 }
@@ -126,7 +126,7 @@ bool triggerActivated(int thresholdLevel)
 /*
  5)
  */
-bool matchCanStart(int playersPresent, bool refereePresent=1)
+bool matchCanStart(int playersPresent, bool refereePresent = 1)
 {
     ignoreUnused(playersPresent, refereePresent);
     return{};
@@ -136,8 +136,8 @@ bool matchCanStart(int playersPresent, bool refereePresent=1)
  */
 bool validSubmission(int wordCount, float lineSpacing, bool headerCorrect)
 {
-ignoreUnused(wordCount, lineSpacing, headerCorrect);
-return{};
+    ignoreUnused(wordCount, lineSpacing, headerCorrect);
+    return{};
 }
 /*
  7)
@@ -157,7 +157,7 @@ float journeyTime(int averageSpeed, int distanceInMiles)
 /*
  9)
  */
-void addChordTones(float inputNoteFrequency, float third = 0.333, float fifth = 0.583)
+void addChordTones(float inputNoteFrequency, float third = 0.333f, float fifth = 0.583f)
 {
     ignoreUnused(inputNoteFrequency, third, fifth);
 }
@@ -192,23 +192,23 @@ int main()
     //2)
     auto phraseLength =segmentLength(22, 45);
     //3)
-    grandaughterTantrumLikelihood (3, 1);
+    grandaughterTantrumLikelihood(3, 1);
     //4)
     bool playNote = triggerActivated(7);
     //5)
     bool blowWhistle = matchCanStart(11);
     //6)
-    bool markThis = validSubmission(2000,1.5, 1);
+    bool markThis = validSubmission(2000, 1.5, 1);
     //7)
-    enterPlayground(1.1);
+    enterPlayground(1.1f);
     //8)
     float podcastLength = journeyTime(60, 225);
     //9)
-    addChordTones(1.167);
+    addChordTones(1.167f);
     //10)
     meetingQuorate(7,13);
     
-    ignoreUnused(carRented,pitchArea,phraseLength,grandaughterTantrumLikelihood, playNote, blowWhistle, markThis, enterPlayground, podcastLength, addChordTones, meetingQuorate);
+    ignoreUnused(carRented, pitchArea, phraseLength, grandaughterTantrumLikelihood, playNote, blowWhistle, markThis, enterPlayground, podcastLength, addChordTones, meetingQuorate);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

@@ -60,21 +60,21 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-int count = 0;
-int age = 21;
-int rankOrder = 6;
-char letter = 'a';
-char position = 'B';
-char axis = 'y';
-bool OnOff = false; 
-bool answer = true;
-bool upDown = true;
-float height = 1.80f;
-float weight = 6.54f;
-float width = 4.356f;
-double kmDriven = 8.3333;
-double hardSumsResult = 34.502935409324809834;
-double minisculeThingSize = 0.0000000000234;
+    int count = 0;
+    int age = 21;
+    int rankOrder = 6;
+    char letter = 'a';
+    char position = 'B';
+    char axis = 'y';
+    bool OnOff = false; 
+    bool answer = true;
+    bool upDown = true;
+    float height = 1.80f;
+    float weight = 6.54f;
+    float width = 4.356f;
+    double kmDriven = 8.3333;
+    double hardSumsResult = 34.502935409324809834;
+    double minisculeThingSize = 0.0000000000234;
   
 
     
